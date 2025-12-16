@@ -1,3 +1,10 @@
+"""
+ŞÜKRÜ YAVUZ - 2312729015
+
+https://github.com/Yavuz0707/ankara_su_numunesi.git
+
+"""
+
 import streamlit as st
 import folium
 from streamlit_folium import st_folium
@@ -22,7 +29,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# --- 1. VERİ HAZIRLIĞI (SENARYO 5) ---
+# --- 1. VERİ HAZIRLIĞI ---
 LOCATIONS = {
     "Merkez (Baslangic)": (39.9079, 32.8169),
     "Mogan Golu": (39.7745, 32.7936),
@@ -39,7 +46,7 @@ LOCATIONS = {
 # --- 2. GOOGLE MAPS API FONKSİYONU ---
 @st.cache_data # API çağrısını önbelleğe alıp hızlandırır ve maliyeti düşürür
 def get_google_matrix(locations):
-    # Anahtarı güvenli yerden çekiyoruz (Kriter 1)
+    # API anahtarı secrets.toml'dan güvenli bir şekilde çekildi..
     try:
         api_key = st.secrets["GOOGLE_API_KEY"]
     except:
@@ -152,7 +159,7 @@ class AntColonyOptimizer:
 st.title("🐜 Ankara Su Numunesi ACO Optimizasyonu")
 st.markdown("Bu proje, **Karınca Kolonisi Algoritması** kullanarak en kısa numune toplama rotasını belirler.")
 
-# --- Sidebar: Parametreler (Kriter 3) ---
+# --- Sidebar: Parametreler ---
 with st.sidebar:
     st.header("⚙️ ACO Parametreleri")
     n_ants = st.slider("Karınca Sayısı (Popülasyon)", 5, 50, 20)
@@ -229,7 +236,7 @@ if st.session_state.get('run_done'):
         
     with col_graph:
         st.subheader("📈 Yakınsama Grafiği (Convergence)")
-        # Matplotlib ile grafik çizimi (Kriter 3 - İterasyon grafiği)
+        # Matplotlib ile grafik çizimi 
         fig, ax = plt.subplots()
         ax.plot(history, marker='o', linestyle='-', color='b')
         ax.set_title("Mesafenin İterasyonlara Göre Değişimi")
