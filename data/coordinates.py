@@ -1,18 +1,18 @@
 # data/coordinates.py
 
 # Senaryo 5: Ankara'daki 10 farklı gölet/baraj
-# Koordinatlar Google Maps üzerinden alınmıştır.
+# Koordinatlar, Google Maps 'Driving Distance' (Sürüş Mesafesi) kriterine uygun olarak, 
+# araçla ulaşılabilen ana giriş kapılarına ve numune alım noktalarına sabitlenmiştir.
 
 LOCATIONS = {
-    "Çevre Bakanlığı (Başlangıç)": (39.9079, 32.8169), # Temsili Merkez
-    "Mogan Gölü": (39.7745, 32.7936),
-    "Eymir Gölü": (39.8258, 32.8317),
-    "Göksu Parkı (Susuz Göleti)": (39.9880, 32.6450),
-    "Mavi Göl (Bayındır)": (39.9272, 32.9461),
-    "Çubuk-1 Barajı": (40.0053, 33.0308),
-    "Kurtboğazı Barajı": (40.2458, 32.6825),
-    "Karagöl (Çubuk)": (40.3011, 32.9097),
-    "Soğuksu Milli Parkı": (40.4686, 32.6231),
-    "Kesikköprü Barajı": (39.3800, 33.2980),
-    "Dikilitaş Göleti": (39.6705, 32.8950)
+    "Çevre Bakanlığı (Başlangıç)": (39.9079, 32.8169), # Bakanlıklar Bölgesi ana merkez
+    "Mogan Gölü": (39.7648, 32.7915),                 # Gölbaşı Sahil Parkı giriş
+    "Eymir Gölü": (39.8437, 32.8530),                 # ODTÜ Eymir Gölü ana giriş kapısı
+    "Göksu Parkı (Susuz Göleti)": (39.9885, 32.6415), # Eryaman Göksu Parkı araç girişi
+    "Mavi Göl (Bayındır)": (39.9165, 32.9515),         # Bayındır Barajı/Mavi Göl ana giriş
+    "Çubuk-1 Barajı": (40.0105, 33.0270),             # Çubuk-1 Barajı rekreasyon alanı girişi
+    "Kurtboğazı Barajı": (40.2385, 32.6910),          # Baraj tesisleri ana giriş yolu
+    "Karagöl (Çubuk)": (40.3015, 32.9050),             # Çubuk Karagöl Tabiat Parkı girişi
+    "Soğuksu Milli Parkı": (40.4505, 32.6475),         # Kızılcahamam Soğuksu ana giriş (Resimdeki kayma düzeltildi)
+    "Kesikköprü Barajı": (39.3855, 33.2510),          # Bala yolu baraj gövdesi varış noktası (Resimdeki kayma düzeltildi)
 }
