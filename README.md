@@ -16,7 +16,7 @@ Bu proje, **Ant Colony Optimization (Karınca Kolonisi Optimizasyonu)** algoritm
 
 ## 🎯 Proje Hakkında
 
-Bu proje, **Karınca Kolonisi Optimizasyonu (ACO)** algoritmasını kullanarak Ankara'daki su toplama noktaları arasında en optimal rotayı bulur. Algoritma, karıncaların doğada yiyecek ararken kullandıkları feromon takibi yönteminden esinlenmiştir.
+Bu proje, **Karınca Kolonisi Optimizasyonu (ACO)** algoritmasını kullanarak Ankara'daki su toplama noktaları arasında en optimal rotayı bulur. Algoritma, karıncaların doğada yiyecek ararken kullandıkları feromon takibi yönteminden esinlenmiştir..
 
 ### ✨ Özellikler
 
